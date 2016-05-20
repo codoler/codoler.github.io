@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="随笔," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -84,24 +84,25 @@
 
 
 
-<meta name="description" content="这是我在Hexo 上的第一篇文章。
-感觉很好。
-    送上The Good Wife 剧终时的插曲，Better">
+<meta name="description" content="/*
+Copyright (c) 2013 Suffick at Codepen (http://codepen.io/suffick), GitHub (https://github.com/suffick) and lonely-pixel.com
+
+Permission is hereby granted, free of charge, to any person obtaining a">
 <meta property="og:type" content="article">
-<meta property="og:title" content="新的开始">
-<meta property="og:url" content="http://aiall.cc/2016/05/18/新的开始/index.html">
+<meta property="og:title" content="空巷子">
+<meta property="og:url" content="http://aiall.cc/2016/05/20/js/index/index.html">
 <meta property="og:site_name" content="空巷子">
-<meta property="og:description" content="这是我在Hexo 上的第一篇文章。
-感觉很好。
-    送上The Good Wife 剧终时的插曲，Better">
-<meta property="og:image" content="http://ww3.sinaimg.cn/mw690/4d75dd53jw1f40xon8kmpj20sg0g0gom.jpg">
-<meta property="og:updated_time" content="2016-05-20T00:21:14.932Z">
+<meta property="og:description" content="/*
+Copyright (c) 2013 Suffick at Codepen (http://codepen.io/suffick), GitHub (https://github.com/suffick) and lonely-pixel.com
+
+Permission is hereby granted, free of charge, to any person obtaining a">
+<meta property="og:updated_time" content="2014-03-21T08:25:15.812Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="新的开始">
-<meta name="twitter:description" content="这是我在Hexo 上的第一篇文章。
-感觉很好。
-    送上The Good Wife 剧终时的插曲，Better">
-<meta name="twitter:image" content="http://ww3.sinaimg.cn/mw690/4d75dd53jw1f40xon8kmpj20sg0g0gom.jpg">
+<meta name="twitter:title" content="空巷子">
+<meta name="twitter:description" content="/*
+Copyright (c) 2013 Suffick at Codepen (http://codepen.io/suffick), GitHub (https://github.com/suffick) and lonely-pixel.com
+
+Permission is hereby granted, free of charge, to any person obtaining a">
 
 
 
@@ -119,7 +120,7 @@
   };
 </script>
 
-  <title> 新的开始 | 空巷子 </title>
+  <title>  | 空巷子 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -278,7 +279,7 @@
             
             
               
-                新的开始
+                
               
             
           </h1>
@@ -290,8 +291,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-18T15:32:38+08:00" content="2016-05-18">
-              2016-05-18
+            <time itemprop="dateCreated" datetime="2016-05-20T22:11:03+08:00" content="2016-05-20">
+              2016-05-20
             </time>
           </span>
 
@@ -301,8 +302,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/05/18/新的开始/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/18/新的开始/" itemprop="commentsCount"></span>
+                <a href="/2016/05/20/js/index/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/20/js/index/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -325,10 +326,199 @@
       
 
       
-        <pre><code>这是我在Hexo 上的第一篇文章。
-感觉很好。
-</code></pre><p><img src="http://ww3.sinaimg.cn/mw690/4d75dd53jw1f40xon8kmpj20sg0g0gom.jpg" alt="like"><br>    送上The Good Wife 剧终时的插曲，Better<br>    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=21572419&auto=1&height=66"></iframe></p>
+        /*
+Copyright (c) 2013 Suffick at Codepen (http://codepen.io/suffick), GitHub (https://github.com/suffick) and lonely-pixel.com
 
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+*/
+
+
+
+// settings
+
+var physics_accuracy  = 3,
+    mouse_influence   = 20,
+    mouse_cut         = 5,
+    gravity           = 1200,
+    cloth_height      = 30,
+    cloth_width       = 50,
+    start_y           = 20,
+    spacing           = 7,
+    tear_distance     = 60;
+
+
+window.requestAnimFrame =
+    window.requestAnimationFrame ||
+    window.webkitRequestAnimationFrame ||
+    window.mozRequestAnimationFrame ||
+    window.oRequestAnimationFrame ||
+    window.msRequestAnimationFrame ||
+    function (callback) {
+        window.setTimeout(callback, 1000 / 60);
+};
+
+var canvas,
+    ctx,
+    cloth,
+    boundsx,
+    boundsy,
+    mouse = {
+        down: false,
+        button: 1,
+        x: 0,
+        y: 0,
+        px: 0,
+        py: 0
+    };
+
+var Point = function (x, y) {
+
+    this.x      = x;
+    this.y      = y;
+    this.px     = x;
+    this.py     = y;
+    this.vx     = 0;
+    this.vy     = 0;
+    this.pin_x  = null;
+    this.pin_y  = null;
+    
+    this.constraints = [];
+};
+
+Point.prototype.update = function (delta) {
+
+    if (mouse.down) {
+
+        var diff_x = this.x - mouse.x,
+            diff_y = this.y - mouse.y,
+            dist = Math.sqrt(diff_x * diff_x + diff_y * diff_y);
+
+        if (mouse.button == 1) {
+
+            if (dist < mouse_influence) {
+                this.px = this.x - (mouse.x - mouse.px) * 1.8;
+                this.py = this.y - (mouse.y - mouse.py) * 1.8;
+            }
+
+        } else if (dist < mouse_cut) this.constraints = [];
+    }
+
+    this.add_force(0, gravity);
+
+    delta *= delta;
+    nx = this.x + ((this.x - this.px) * .99) + ((this.vx / 2) * delta);
+    ny = this.y + ((this.y - this.py) * .99) + ((this.vy / 2) * delta);
+
+    this.px = this.x;
+    this.py = this.y;
+
+    this.x = nx;
+    this.y = ny;
+
+    this.vy = this.vx = 0
+};
+
+Point.prototype.draw = function () {
+
+    if (!this.constraints.length) return;
+
+    var i = this.constraints.length;
+    while (i--) this.constraints[i].draw();
+};
+
+Point.prototype.resolve_constraints = function () {
+
+    if (this.pin_x != null && this.pin_y != null) {
+
+        this.x = this.pin_x;
+        this.y = this.pin_y;
+        return;
+    }
+
+    var i = this.constraints.length;
+    while (i--) this.constraints[i].resolve();
+
+    this.x > boundsx ? this.x = 2 * boundsx - this.x : 1 > this.x && (this.x = 2 - this.x);
+    this.y < 1 ? this.y = 2 - this.y : this.y > boundsy && (this.y = 2 * boundsy - this.y);
+};
+
+Point.prototype.attach = function (point) {
+
+    this.constraints.push(
+        new Constraint(this, point)
+    );
+};
+
+Point.prototype.remove_constraint = function (constraint) {
+
+    this.constraints.splice(this.constraints.indexOf(constraint), 1);
+};
+
+Point.prototype.add_force = function (x, y) {
+
+    this.vx += x;
+    this.vy += y;
+};
+
+Point.prototype.pin = function (pinx, piny) {
+    this.pin_x = pinx;
+    this.pin_y = piny;
+};
+
+var Constraint = function (p1, p2) {
+
+    this.p1     = p1;
+    this.p2     = p2;
+    this.length = spacing;
+};
+
+Constraint.prototype.resolve = function () {
+
+    var diff_x  = this.p1.x - this.p2.x,
+        diff_y  = this.p1.y - this.p2.y,
+        dist    = Math.sqrt(diff_x * diff_x + diff_y * diff_y),
+        diff    = (this.length - dist) / dist;
+
+    if (dist > tear_distance) this.p1.remove_constraint(this);
+
+    var px = diff_x * diff * 0.5;
+    var py = diff_y * diff * 0.5;
+
+    this.p1.x += px;
+    this.p1.y += py;
+    this.p2.x -= px;
+    this.p2.y -= py;
+};
+
+Constraint.prototype.draw = function () {
+
+    ctx.moveTo(this.p1.x, this.p1.y);
+    ctx.lineTo(this.p2.x, this.p2.y);
+};
+
+var Cloth = function () {
+
+    this.points = [];
+
+    var start_x = canvas.width / 2 - cloth_width * spacing / 2;
+
+    for (var y = 0; y 
       
     </div>
 
@@ -347,23 +537,21 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/随笔/" rel="tag">#随笔</a>
-          
-        </div>
-      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/05/20/css/style/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/05/19/新文档/" rel="prev" title="这是一篇测试文章">
-                这是一篇测试文章 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/05/20/HTML5测试/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -390,8 +578,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/05/18/新的开始/"
-           data-title="新的开始" data-url="http://aiall.cc/2016/05/18/新的开始/">
+      <div class="ds-thread" data-thread-key="2016/05/20/js/index/"
+           data-title="" data-url="http://aiall.cc/2016/05/20/js/index/">
       </div>
     
   </div>
