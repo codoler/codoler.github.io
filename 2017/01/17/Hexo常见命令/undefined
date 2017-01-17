@@ -84,19 +84,19 @@
 
 
 
-<meta name="description" content="常用命令：‘hexo new “postName” #新建文章hexo new page “pageName” #新建页面hexo generate #生成静态页面至public目录hexo server #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）hexo deploy #将.deploy目录部署到GitHub‘’
-常用复合命令：‘hexo d -g #生成加部署">
+<meta name="description" content="常用命令：‘’’hexo new “postName” #新建文章hexo new page “pageName” #新建页面hexo generate #生成静态页面至public目录hexo server #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）hexo deploy #将.deploy目录部署到GitHub‘’’
+常用复合命令：‘’’hexo d -g #">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo常见命令">
 <meta property="og:url" content="http://aiall.cc/2017/01/17/Hexo常见命令/undefined">
 <meta property="og:site_name" content="空巷子">
-<meta property="og:description" content="常用命令：‘hexo new “postName” #新建文章hexo new page “pageName” #新建页面hexo generate #生成静态页面至public目录hexo server #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）hexo deploy #将.deploy目录部署到GitHub‘’
-常用复合命令：‘hexo d -g #生成加部署">
-<meta property="og:updated_time" content="2017-01-17T03:10:01.443Z">
+<meta property="og:description" content="常用命令：‘’’hexo new “postName” #新建文章hexo new page “pageName” #新建页面hexo generate #生成静态页面至public目录hexo server #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）hexo deploy #将.deploy目录部署到GitHub‘’’
+常用复合命令：‘’’hexo d -g #">
+<meta property="og:updated_time" content="2017-01-17T03:27:41.767Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo常见命令">
-<meta name="twitter:description" content="常用命令：‘hexo new “postName” #新建文章hexo new page “pageName” #新建页面hexo generate #生成静态页面至public目录hexo server #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）hexo deploy #将.deploy目录部署到GitHub‘’
-常用复合命令：‘hexo d -g #生成加部署">
+<meta name="twitter:description" content="常用命令：‘’’hexo new “postName” #新建文章hexo new page “pageName” #新建页面hexo generate #生成静态页面至public目录hexo server #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）hexo deploy #将.deploy目录部署到GitHub‘’’
+常用复合命令：‘’’hexo d -g #">
 
 
 
@@ -339,9 +339,9 @@
       
 
       
-        <h6 id="常用命令："><a href="#常用命令：" class="headerlink" title="常用命令："></a>常用命令：</h6><p>‘<br>hexo new “postName” #新建文章<br>hexo new page “pageName” #新建页面<br>hexo generate #生成静态页面至public目录<br>hexo server #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）<br>hexo deploy #将.deploy目录部署到GitHub<br>‘’</p>
-<h6 id="常用复合命令："><a href="#常用复合命令：" class="headerlink" title="常用复合命令："></a>常用复合命令：</h6><p>‘<br>hexo d -g #生成加部署<br>hexo s -g #预览加部署’</p>
-<h6 id="简写："><a href="#简写：" class="headerlink" title="简写："></a>简写：</h6><p>‘<br>hexo n == hexo new<br>hexo g == hexo generate<br>hexo s == hexo server<br>hexo d == hexo deploy’</p>
+        <h6 id="常用命令："><a href="#常用命令：" class="headerlink" title="常用命令："></a>常用命令：</h6><p>‘’’<br>hexo new “postName” #新建文章<br>hexo new page “pageName” #新建页面<br>hexo generate #生成静态页面至public目录<br>hexo server #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）<br>hexo deploy #将.deploy目录部署到GitHub<br>‘’’</p>
+<h6 id="常用复合命令："><a href="#常用复合命令：" class="headerlink" title="常用复合命令："></a>常用复合命令：</h6><p>‘’’<br>hexo d -g #生成加部署<br>hexo s -g #预览加部署</p>
+<h6 id="简写："><a href="#简写：" class="headerlink" title="简写："></a>简写：</h6><p>‘’’<br>hexo n == hexo new<br>hexo g == hexo generate<br>hexo s == hexo server<br>hexo d == hexo deploy</p>
 
       
     </div>
