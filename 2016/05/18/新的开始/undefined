@@ -89,7 +89,7 @@
     送上The Good Wife 剧终时的插曲，Better:">
 <meta property="og:type" content="article">
 <meta property="og:title" content="新的开始">
-<meta property="og:url" content="http://aiall.cc/2016/05/18/新的开始/index.html">
+<meta property="og:url" content="http://aiall.cc/2016/05/18/新的开始/undefined">
 <meta property="og:site_name" content="空巷子">
 <meta property="og:description" content="这是我在Hexo 上的第一篇文章。
 感觉很好。
@@ -320,8 +320,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/05/18/新的开始/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/18/新的开始/" itemprop="commentsCount"></span>
+                <a href="/2016/05/18/新的开始/undefined#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/18/新的开始/undefined" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -381,7 +381,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/05/24/大数据实时计算框架/" rel="prev" title="大数据实时计算框架">
+              <a href="/2016/05/24/大数据实时计算框架/undefined" rel="prev" title="大数据实时计算框架">
                 大数据实时计算框架 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -409,8 +409,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/05/18/新的开始/"
-           data-title="新的开始" data-url="http://aiall.cc/2016/05/18/新的开始/">
+      <div class="ds-thread" data-thread-key="2016/05/18/新的开始/undefined"
+           data-title="新的开始" data-url="http://aiall.cc/2016/05/18/新的开始/undefined">
       </div>
     
   </div>
@@ -448,9 +448,9 @@
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
-               alt="Codoler" />
-          <p class="site-author-name" itemprop="name">Codoler</p>
-          <p class="site-description motion-element" itemprop="description"></p>
+               alt="郝早早" />
+          <p class="site-author-name" itemprop="name">郝早早</p>
+          <p class="site-description motion-element" itemprop="description">这只是一种可能，未必是唯一一种可能</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
@@ -524,7 +524,7 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Codoler</span>
+  <span class="author" itemprop="copyrightHolder">郝早早</span>
 </div>
 
 <div class="powered-by">
